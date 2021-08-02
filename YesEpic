@@ -1,0 +1,20 @@
+-- ** getting handlers ** --
+local gs = game:GetService("GroupService") 
+local fuck6ex = game:GetService("Players").LocalPlayer
+local id = 123456
+local plrid = game.Players.LocalPlayer.UserId
+local plrisingroup = false
+
+
+for _, group in ipairs(gs:GetGroupsAsync(plrid)) do -- getting the plrid
+    if group.id == id then -- checking if the groupid is the id of the group
+        plrisingroup = true -- changing plrisingroup to true
+        print('poggers it worked!')
+    end
+end
+
+if plrisingroup == true then -- checking if the player is in the group
+    -- poggers script here
+else
+    -- poggers script here
+end
